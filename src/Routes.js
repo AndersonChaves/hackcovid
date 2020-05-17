@@ -4,6 +4,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import Colors from './components/Colors';
 import Main from './pages/Main';
 import Screening from './pages/Screening';
+import Maps from './pages/Maps';
 
 const Routes = createAppContainer(
   createStackNavigator({
@@ -17,6 +18,12 @@ const Routes = createAppContainer(
       screen: Screening,
       navigationOptions: {
         title: 'Triagem'
+      },
+    },
+    Maps: {
+      screen: Maps,
+      navigationOptions: {
+        title: 'Localização'
       },
     }
   }, {

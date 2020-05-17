@@ -62,7 +62,7 @@ function Screening({ navigation }) {
         <View style={{ alignItems: 'center' }}>
           <TouchableOpacity 
             style={styles.button}
-            onPress={() => {navigation.navigate('Screening')}}
+            onPress={() => {navigation.navigate('Maps')}}
           >
             <Text style={styles.buttonText}>Prosseguir</Text>  
           </TouchableOpacity>
@@ -77,7 +77,6 @@ const styles = StyleSheet.create({
     flex: 1,
     marginLeft: 30,
     marginRight: 30,
-    overflow: 'scroll',
   },
   label: {
     fontSize: 17,
