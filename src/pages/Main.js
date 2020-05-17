@@ -9,7 +9,10 @@ function Main({ navigation }) {
     <View style={styles.container}>
       <Text style={styles.title}>Bem-vindo ao Hackcovid!</Text>
       <MedicalIcon style={styles.icon}/>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity 
+        style={styles.button}
+        onPress={() => {navigation.navigate('Screening')}}
+      >
         <Text style={styles.buttonText}>Começar</Text>  
       </TouchableOpacity>
     </View>
