@@ -62,7 +62,7 @@ function Screening({ navigation }) {
         <View style={{ alignItems: 'center' }}>
           <TouchableOpacity 
             style={styles.button}
-            onPress={() => {navigation.navigate('Maps')}}
+            onPress={() => {navigation.navigate('HospitalList')}}
           >
             <Text style={styles.buttonText}>Prosseguir</Text>  
           </TouchableOpacity>

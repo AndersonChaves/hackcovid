@@ -5,6 +5,7 @@ import Colors from './components/Colors';
 import Main from './pages/Main';
 import Screening from './pages/Screening';
 import Maps from './pages/Maps';
+import HospitalList from './pages/HospitalList';
 
 const Routes = createAppContainer(
   createStackNavigator({
@@ -25,7 +26,13 @@ const Routes = createAppContainer(
       navigationOptions: {
         title: 'Localização'
       },
-    }
+    },
+    HospitalList: {
+      screen: HospitalList,
+      navigationOptions: {
+        title: 'Unidades de emergência',
+      },
+    },
   }, {
     defaultNavigationOptions: {
       headerTintColor: '#FFF',
