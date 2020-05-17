@@ -7,7 +7,7 @@ import Colors from '../components/Colors';
 function Main({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Bem-vindo ao Hackcovid!</Text>
+      <Text style={styles.title}>Bem-vindo ao Covid Check!</Text>
       <MedicalIcon style={styles.icon}/>
       <TouchableOpacity 
         style={styles.button}
