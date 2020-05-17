@@ -9,8 +9,12 @@ function Screening({ navigation }) {
         style={styles.input}
         placeholder="Qual é a sua idade?"
         placeholderTextColor="#999"
-        autoCapitalize="words"
-        autoCorrect={false}
+      />
+      <Text style={styles.label}>Temperatura</Text>
+      <TextInput
+        style={styles.input}
+        placeholder="Temperatura medida por um termômetro"
+        placeholderTextColor="#999"
       />
     </View>
   )
@@ -36,7 +40,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#444',
     height: 44,
-    marginBottom: 20,
     borderRadius: 2
   },
 });
