@@ -16,6 +16,12 @@ function Screening({ navigation }) {
         placeholder="Temperatura medida por um termômetro"
         placeholderTextColor="#999"
       />
+      <Text style={styles.label}>Pulsação cardiaca</Text>
+      <TextInput
+        style={styles.input}
+        placeholder="Pulsação cardiaca"
+        placeholderTextColor="#999"
+      />
     </View>
   )
 }
