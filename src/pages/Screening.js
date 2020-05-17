@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, TextInput } from 'react-native';
+import { StyleSheet, View, Text, TextInput, CheckBox } from 'react-native';
 
 function Screening({ navigation }) {
   return (
@@ -22,6 +22,23 @@ function Screening({ navigation }) {
         placeholder="Pulsação cardiaca"
         placeholderTextColor="#999"
       />
+      <Text style={styles.label}>Marque caso possua alguma das condições a seguir</Text>
+      <View style={{ flexDirection: 'row' }}>
+        <CheckBox/>
+        <Text style={{marginTop: 7}}>Hipertensão</Text>
+      </View>
+      <View style={{ flexDirection: 'row' }}>
+        <CheckBox/>
+        <Text style={{marginTop: 7}}>Diabetes</Text>
+      </View>
+      <View style={{ flexDirection: 'row' }}>
+        <CheckBox/>
+        <Text style={{marginTop: 7}}>Asma</Text>
+      </View>
+      <View style={{ flexDirection: 'row' }}>
+        <CheckBox/>
+        <Text style={{marginTop: 7}}>Oncologia</Text>
+      </View>
     </View>
   )
 }
